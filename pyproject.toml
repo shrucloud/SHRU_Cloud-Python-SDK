@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shrucloud"
+version = "1.0.0"
+description = "Official Python client for the SHRU Cloud API: sync services, place orders and check status over signed requests."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "S-SERVER / SHRU Cloud" }]
+keywords = ["shru", "shru-cloud", "sdk", "api", "repair", "unlock"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/shrucloud/SHRU_Cloud-Python-SDK"
+Issues = "https://github.com/shrucloud/SHRU_Cloud-Python-SDK/issues"
+Changelog = "https://github.com/shrucloud/SHRU_Cloud-Python-SDK/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+shrucloud = ["py.typed"]
